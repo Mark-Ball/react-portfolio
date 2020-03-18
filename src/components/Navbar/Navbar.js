@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Topbar, Title } from './styles';
+import Hamburger from '../Hamburger/Hamburger';
 
 class Navbar extends Component {
     state = {
@@ -14,7 +15,7 @@ class Navbar extends Component {
         return (
             <Topbar>
                 <Title>Mark Ball</Title>
-                <button onClick={this.handleClick}>hamburger</button>
+                <Hamburger />
             </Topbar>
         )
     }
