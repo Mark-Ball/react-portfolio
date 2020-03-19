@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { COLOURS } from '../../constants';
 
 const height = 30; // px
 const width = 45; // px
@@ -42,6 +43,10 @@ export const HamburgerIcon = styled.div`
     &.open span:nth-child(3) {
         transform: rotate(-45deg);
         transition: transform ${transitionSpeed}s;
+    }
+
+    &:hover span {
+        background: ${COLOURS.HIGHLIGHT};
     }
 `;
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Topbar, Title } from './styles';
+import { Topbar, Title, Box } from './styles';
 import Hamburger from '../Hamburger/Hamburger';
 
 class Navbar extends Component {
@@ -33,6 +33,7 @@ class Navbar extends Component {
                     Mark Ball
                 </Title>
                 <Hamburger />
+                <Box></Box>
             </Topbar>
         )
     }
