@@ -2,28 +2,21 @@ import React, { Component } from 'react';
 import { HamburgerIcon, Bar } from './styles';
 
 class Hamburger extends Component {
-    state = {
-        open: false
-    };
-
-    handleClick = () => {
-        const { open } = this.state;
-        this.setState({ open: !open });
-    };
-
     render() {
-        const { open } = this.state;
+        const { togglePopup, showPopup } = this.props;
 
         return (
-            <HamburgerIcon 
-                className={open && 'open'}
-                onClick={this.handleClick}
-            >
-                <Bar></Bar>
-                <Bar></Bar>
-                <Bar></Bar>
-                <Bar></Bar>
-            </HamburgerIcon>
+            <>
+                <HamburgerIcon 
+                    className={showPopup && 'open'}
+                    onClick={togglePopup}
+                >
+                    <Bar></Bar>
+                    <Bar></Bar>
+                    <Bar></Bar>
+                    <Bar></Bar>
+                </HamburgerIcon>
+            </>
         )
     }
 }

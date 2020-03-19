@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Topbar, Title, Box } from './styles';
 import Hamburger from '../Hamburger/Hamburger';
+import NavPopup from '../NavPopup/NavPopup';
 
 class Navbar extends Component {
     state = {
@@ -8,7 +9,7 @@ class Navbar extends Component {
         titleHovered: false
     };
 
-    handleClick = () => {
+    togglePopup = () => {
         this.setState({ showPopup: !this.state.showPopup })
     };
 
@@ -21,7 +22,7 @@ class Navbar extends Component {
     }
     
     render() {
-        const { titleHovered } = this.state;
+        const { showPopup, titleHovered } = this.state;
 
         return (
             <Topbar>
@@ -32,8 +33,9 @@ class Navbar extends Component {
                 >
                     Mark Ball
                 </Title>
-                <Hamburger />
+                <Hamburger togglePopup={this.togglePopup} showPopup={showPopup} />
                 <Box></Box>
+                {showPopup && <NavPopup />}
             </Topbar>
         )
     }
