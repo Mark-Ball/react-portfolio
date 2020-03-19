@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-const height = 45; // px
-const width = 60; // px
+const height = 30; // px
+const width = 45; // px
 const transitionSpeed = .25; // seconds
 const barColour = '#f2f2f2';
 
