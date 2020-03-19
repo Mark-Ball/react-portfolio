@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Rubik&display=swap');
+
+h1, h2 {
+    font-family: Poppins, sans-serif;
+}
+
+label, li, p, a, th, td, input {
+    font-family: Rubik, sans-serif;
+}

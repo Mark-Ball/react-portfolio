@@ -21,7 +21,7 @@ class Navbar extends Component {
     }
     
     render() {
-        const { titleHovered, hamburgerHovered } = this.state;
+        const { titleHovered } = this.state;
 
         return (
             <Topbar>
