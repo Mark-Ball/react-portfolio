@@ -34,7 +34,6 @@ class Navbar extends Component {
                     Mark Ball
                 </Title>
                 <Hamburger togglePopup={this.togglePopup} showPopup={showPopup} />
-                <Box></Box>
                 {showPopup && <NavPopup />}
             </Topbar>
         )

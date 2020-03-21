@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { COLOURS } from '../../constants';
+import { COLOURS, TRANSITIONTIME } from '../../constants';
 
 export const Topbar = styled.div`
     background-color: #042252;
@@ -12,13 +12,17 @@ export const Topbar = styled.div`
 
 export const Title = styled.h1`
     color: ${COLOURS.BASE};
+    transition: color ${TRANSITIONTIME};
+    -o-transition: color ${TRANSITIONTIME};
+    -ms-transition: color ${TRANSITIONTIME};
+    -moz-transition: color ${TRANSITIONTIME};
+    -webkit-transition: color ${TRANSITIONTIME};
     margin: 0;
     margin: auto 0;
     cursor: pointer;
 
     &:hover {
-        color: red;
-        transition: color 1s;
+        color: ${COLOURS.HIGHLIGHT};
     }
 `;
 

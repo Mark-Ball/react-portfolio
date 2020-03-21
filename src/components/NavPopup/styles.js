@@ -2,12 +2,11 @@ import styled from 'styled-components';
 
 export const Popup = styled.div`
     background-color: white;
-    height: 100vh;
+    height: 80vh;
     width: 200px;
     position: fixed;
-    top: 0;
+    top: 82px;
     right: 0;
-    border: 1px solid black;
     z-index: 10;
 
     display: flex;

@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-import { COLOURS } from '../../constants';
+import { COLOURS, TRANSITIONTIME } from '../../constants';
 
 const height = 30; // px
 const width = 45; // px
 const transitionSpeed = .25; // seconds
-const barColour = '#f2f2f2';
 
 export const HamburgerIcon = styled.div`
     height: ${height}px;
@@ -47,14 +46,19 @@ export const HamburgerIcon = styled.div`
 
     &:hover span {
         background: ${COLOURS.HIGHLIGHT};
+        transition: background ${TRANSITIONTIME};
+        -o-transition: background ${TRANSITIONTIME};
+        -ms-transition: background ${TRANSITIONTIME};
+        -moz-transition: background ${TRANSITIONTIME};
+        -webkit-transition: background ${TRANSITIONTIME};
     }
 `;
 
 export const Bar = styled.span`
+    background: ${COLOURS.BASE};
     display: block;
     position: absolute;
     height: 20%;
     width: 100%;
-    background: ${barColour};
     border-radius: ${height * 0.2}px;
 `;
