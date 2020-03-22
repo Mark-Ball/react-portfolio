@@ -3,8 +3,10 @@ import { Popup } from './styles';
 
 class NavPopup extends Component {
     render() {
+        const { showPopup } = this.props;
+
         return (
-            <Popup>
+            <Popup className={showPopup && 'open'}>
                 <p>Home</p>
                 <p>About</p>
                 <p>Projects</p>
