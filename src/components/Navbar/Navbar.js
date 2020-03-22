@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Topbar, Title, Box } from './styles';
+import { Topbar, Title } from './styles';
 import Hamburger from '../Hamburger/Hamburger';
 import NavPopup from '../NavPopup/NavPopup';
 

@@ -17,7 +17,6 @@ export const Title = styled.h1`
     -ms-transition: color ${TRANSITIONTIME};
     -moz-transition: color ${TRANSITIONTIME};
     -webkit-transition: color ${TRANSITIONTIME};
-    margin: 0;
     margin: auto 0;
     cursor: pointer;
 

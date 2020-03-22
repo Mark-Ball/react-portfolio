@@ -20,55 +20,35 @@ export const HamburgerIcon = styled.div`
         width: 100%;
         border-radius: ${height * 0.2}px;
 
-        transition: background ${TRANSITIONTIME};
-        -o-transition: background ${TRANSITIONTIME};
-        -ms-transition: background ${TRANSITIONTIME};
-        -moz-transition: background ${TRANSITIONTIME};
-        -webkit-transition: background ${TRANSITIONTIME};
+        transition: all ${TRANSITIONTIME};
+        -o-transition: all ${TRANSITIONTIME};
+        -ms-transition: all ${TRANSITIONTIME};
+        -moz-transition: all ${TRANSITIONTIME};
+        -webkit-transition: all ${TRANSITIONTIME};
     }
 
     :hover span {
         background: ${COLOURS.HIGHLIGHT};
     }
 
-    span:nth-child(1) {
-        opacity: 1;
-        transition: opacity ${transitionSpeed * 2}s;
-    }
-
     span:nth-child(2), span:nth-child(3) {
         top: ${height * 0.4}px;
         transform: rotate(0deg);
-        transition: transform ${transitionSpeed}s;
     }
 
     span:nth-child(4) {
         top: ${height * 0.8}px;
-        opacity: 1;
-        transition: opacity ${transitionSpeed * 2}s;
     }
 
     &.open span:nth-child(1), &.open span:nth-child(4)  {
         opacity: 0;
-        transition: opacity ${transitionSpeed * 2}s;
     }
 
     &.open span:nth-child(2) {
         transform: rotate(45deg);
-        transition: transform ${transitionSpeed}s;
     }
 
     &.open span:nth-child(3) {
         transform: rotate(-45deg);
-        transition: transform ${transitionSpeed}s;
     }
 `;
-
-// export const Bar = styled.span`
-//     background: ${COLOURS.BASE};
-//     display: block;
-//     position: absolute;
-//     height: 20%;
-//     width: 100%;
-//     border-radius: ${height * 0.2}px;
-// `;
