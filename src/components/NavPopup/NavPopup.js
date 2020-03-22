@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Popup } from './styles';
 
 class NavPopup extends Component {
@@ -7,10 +8,10 @@ class NavPopup extends Component {
 
         return (
             <Popup className={showPopup && 'open'}>
-                <p>Home</p>
-                <p>About</p>
-                <p>Projects</p>
-                <p>Contact</p>
+                <Link to='/'>Home</Link>
+                <Link to='/about'>About</Link>
+                <Link to='/projects'>Projects</Link>
+                <Link to='/contact'>Contact</Link>
                 <p>Download CV</p>
             </Popup>
         )

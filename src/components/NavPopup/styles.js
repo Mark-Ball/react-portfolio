@@ -24,10 +24,12 @@ export const Popup = styled.div`
         right: 0;
     }
 
-    p {
+    a {
+        color: ${COLOURS.BASE};
         cursor: pointer;
         font-size: 20px;
         font-weight: bold;
+        text-decoration: none;
         transition: color ${TRANSITIONTIME};
 
         :hover {
