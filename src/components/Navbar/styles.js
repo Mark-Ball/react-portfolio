@@ -21,7 +21,7 @@ export const Title = styled.h1`
     margin: auto 0;
     cursor: pointer;
 
-    &:hover {
+    :hover {
         color: ${COLOURS.HIGHLIGHT};
     }
 `;
@@ -35,7 +35,7 @@ export const Box = styled.div`
     transform: translate(0px);
     transition: transform 1s;
 
-    &:hover {
+    :hover {
         transform: translate(100px);
         transition: transform 1s;
     }

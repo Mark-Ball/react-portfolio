@@ -12,18 +12,37 @@ export const HamburgerIcon = styled.div`
     margin: 10px;
     cursor: pointer;
 
-    & span:nth-child(1) {
+    span {
+        background: ${COLOURS.BASE};
+        display: block;
+        position: absolute;
+        height: 20%;
+        width: 100%;
+        border-radius: ${height * 0.2}px;
+
+        transition: background ${TRANSITIONTIME};
+        -o-transition: background ${TRANSITIONTIME};
+        -ms-transition: background ${TRANSITIONTIME};
+        -moz-transition: background ${TRANSITIONTIME};
+        -webkit-transition: background ${TRANSITIONTIME};
+    }
+
+    :hover span {
+        background: ${COLOURS.HIGHLIGHT};
+    }
+
+    span:nth-child(1) {
         opacity: 1;
         transition: opacity ${transitionSpeed * 2}s;
     }
 
-    & span:nth-child(2), span:nth-child(3) {
+    span:nth-child(2), span:nth-child(3) {
         top: ${height * 0.4}px;
         transform: rotate(0deg);
         transition: transform ${transitionSpeed}s;
     }
 
-    & span:nth-child(4) {
+    span:nth-child(4) {
         top: ${height * 0.8}px;
         opacity: 1;
         transition: opacity ${transitionSpeed * 2}s;
@@ -43,22 +62,13 @@ export const HamburgerIcon = styled.div`
         transform: rotate(-45deg);
         transition: transform ${transitionSpeed}s;
     }
-
-    &:hover span {
-        background: ${COLOURS.HIGHLIGHT};
-        transition: background ${TRANSITIONTIME};
-        -o-transition: background ${TRANSITIONTIME};
-        -ms-transition: background ${TRANSITIONTIME};
-        -moz-transition: background ${TRANSITIONTIME};
-        -webkit-transition: background ${TRANSITIONTIME};
-    }
 `;
 
-export const Bar = styled.span`
-    background: ${COLOURS.BASE};
-    display: block;
-    position: absolute;
-    height: 20%;
-    width: 100%;
-    border-radius: ${height * 0.2}px;
-`;
+// export const Bar = styled.span`
+//     background: ${COLOURS.BASE};
+//     display: block;
+//     position: absolute;
+//     height: 20%;
+//     width: 100%;
+//     border-radius: ${height * 0.2}px;
+// `;

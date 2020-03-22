@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { HamburgerIcon, Bar } from './styles';
+import { HamburgerIcon } from './styles';
 
 class Hamburger extends Component {
     render() {
@@ -11,10 +11,10 @@ class Hamburger extends Component {
                     className={showPopup && 'open'}
                     onClick={togglePopup}
                 >
-                    <Bar></Bar>
-                    <Bar></Bar>
-                    <Bar></Bar>
-                    <Bar></Bar>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </HamburgerIcon>
             </>
         )
