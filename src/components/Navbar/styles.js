@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { COLOURS, TRANSITIONTIME } from '../../constants';
 
 export const Topbar = styled.div`
-    background-color: #042252;
+    background-color: ${COLOURS.DARKBLUE};
     margin: 0;
     padding: 1em;
 
