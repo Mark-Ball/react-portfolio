@@ -3,8 +3,11 @@ import { COLOURS } from '../../../constants';
 
 export const Container = styled.div`
     height: calc(100vh - 82px);
-    width: 50vw;
+    width: 100vw;
     background: ${COLOURS.MIDBLUE};
+
+    display: flex;
+    justify-content: space-between;
 `;
 
 export const Title = styled.h1`
