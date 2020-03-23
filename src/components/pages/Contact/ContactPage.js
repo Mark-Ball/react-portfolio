@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import ContactForm from '../../Forms/ContactForm/ContactForm';
 
 class ContactPage extends Component {
     render() {
         return (
-            <h1>Contact</h1>
+            <ContactForm />
         )
     }
 }
