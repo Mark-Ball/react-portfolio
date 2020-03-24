@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { CForm } from './styles';
 import FormField from '../../FormField/FormField';
+import Divider from '../../Divider/Divider';
 
 class ContactForm extends Component {
     state = {
@@ -15,13 +16,24 @@ class ContactForm extends Component {
     }
 
     render() {
-        const { firstname } = this.state;
+        const { firstname,lastname, email } = this.state;
 
         return (
             <CForm>
                 <h1>How can I help?</h1>
+                <Divider />
+                <div>
+                    <FormField 
+                        name={['firstname', firstname]} 
+                        handleInputChange={this.handleInputChange} 
+                    />
+                    <FormField 
+                        name={['lastname', lastname]} 
+                        handleInputChange={this.handleInputChange} 
+                    />
+                </div>
                 <FormField 
-                    name={['firstname', firstname]} 
+                    name={['email', email]} 
                     handleInputChange={this.handleInputChange} 
                 />
             </CForm>
