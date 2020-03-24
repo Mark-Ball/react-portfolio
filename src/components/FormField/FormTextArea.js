@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
-import { InputBox } from './styles';
+import { InputTextArea } from './styles';
 
-class FormField extends Component {    
+class FormTextArea extends Component {
     render() {
         const { name, handleInputChange } = this.props;
 
         return (
-            <InputBox>
-                <input 
+            <InputTextArea>
+                <textarea 
                     name={name[0]}
                     onChange={handleInputChange}
                     className={name[1] && 'focused'}
                 />
                 <span>{name[0]}</span>
-            </InputBox>
+            </InputTextArea>
         )
     }
 }
 
-export default FormField;
+export default FormTextArea;

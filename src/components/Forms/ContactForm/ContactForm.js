@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { CForm } from './styles';
-import FormField from '../../FormField/FormField';
 import Divider from '../../Divider/Divider';
+import FormInput from '../../FormField/FormInput';
+import FormTextArea from '../../FormField/FormTextArea';
 
 class ContactForm extends Component {
     state = {
@@ -20,23 +21,23 @@ class ContactForm extends Component {
 
         return (
             <CForm>
-                <h1>How can I help?</h1>
+                <h1>Get in touch</h1>
                 <Divider />
                 <div className='flex'>
-                    <FormField 
+                    <FormInput 
                         name={['firstname', firstname]} 
                         handleInputChange={this.handleInputChange} 
                     />
-                    <FormField 
+                    <FormInput 
                         name={['lastname', lastname]} 
                         handleInputChange={this.handleInputChange} 
                     />
+                    <FormInput
+                        name={['email', email]} 
+                        handleInputChange={this.handleInputChange} 
+                    />
                 </div>
-                <FormField 
-                    name={['email', email]} 
-                    handleInputChange={this.handleInputChange} 
-                />
-                <FormField 
+                <FormTextArea 
                     name={['message', message]} 
                     handleInputChange={this.handleInputChange} 
                 />

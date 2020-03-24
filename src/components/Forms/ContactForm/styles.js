@@ -4,7 +4,7 @@ import { COLOURS } from '../../../constants';
 export const CForm = styled.form`
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
 
     h1 {
@@ -13,7 +13,7 @@ export const CForm = styled.form`
 
     .flex {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
 
@@ -21,9 +21,13 @@ export const CForm = styled.form`
         background: ${COLOURS.HIGHLIGHT};
         border: none;
         color: white;
+        cursor: pointer;
         font-size: large;
         font-weight: bold;
         height: 50px;
+        width: 852px;
+        margin: auto;
+        text-align: center;
         letter-spacing: 2px;
         transition: all .5s;
 

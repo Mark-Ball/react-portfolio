@@ -4,6 +4,6 @@ h1, h2 {
     font-family: Poppins, sans-serif;
 }
 
-label, li, p, a, th, td, input {
+label, li, p, a, th, td, input, textarea {
     font-family: Rubik, sans-serif;
 }

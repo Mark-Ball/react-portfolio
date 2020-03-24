@@ -11,5 +11,4 @@ export const Line = styled.div`
         height: 5px;
         width: 40px;
     }
-    
 `;
