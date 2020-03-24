@@ -4,6 +4,8 @@ import { COLOURS } from '../../../constants';
 export const CForm = styled.form`
     display: flex;
     flex-direction: column;
+    padding-right: 30px;
+    padding-left: 30px;
     max-width: 900px;
     margin: 0 auto;
 
@@ -26,6 +28,7 @@ export const CForm = styled.form`
         font-weight: bold;
         height: 50px;
         width: 852px;
+        max-width: 100%;
         margin: auto;
         text-align: center;
         letter-spacing: 2px;
@@ -35,6 +38,5 @@ export const CForm = styled.form`
             letter-spacing: 4px;
             background: ${COLOURS.DARKHIGHLIGHT};
         }
-        
     }
 `;

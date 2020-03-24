@@ -51,6 +51,7 @@ export const InputTextArea = styled.label`
     cursor: text;
     height: ${height * 3}px;
     width: ${getLength(width)}px;
+    max-width: 100%;
     margin: auto;
     margin-bottom: 30px;
 
@@ -67,7 +68,7 @@ export const InputTextArea = styled.label`
         top: 24px;
         left: 10px;
         height: 80%;
-        width: 98%;
+        width: 96%;
         margin: auto;
         border: none;
         outline: none;
