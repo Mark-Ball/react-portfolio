@@ -27,7 +27,7 @@ export const InputBox = styled.label`
         outline: none;
         font-size: large;
 
-        :focus + span {
+        :focus + span, &.focused + span {
             top: 5px;
             left: 10px;
             font-size: .75em;

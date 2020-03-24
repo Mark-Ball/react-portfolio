@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
 import { InputBox } from './styles';
 
-class FormField extends Component {
+class FormField extends Component {    
     render() {
-        const { name } = this.props;
-        
+        const { name, handleInputChange } = this.props;
+
         return (
             <InputBox>
-                <input name='firstname' />
-                <span>name</span>
+                <input 
+                    name={name[0]}
+                    onChange={handleInputChange}
+                    className={name[1] && 'focused'}
+                />
+                <span>{name[0]}</span>
             </InputBox>
         )
     }
