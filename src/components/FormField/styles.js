@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const height = 50; // px
-const width = 300; // px
+const width = 250; // px
 
 export const InputBox = styled.label`
     display: inline-block;
@@ -10,6 +10,7 @@ export const InputBox = styled.label`
     border-radius: 4px;
     height: ${height}px;
     width: ${width}px;
+    margin-bottom: 30px;
 
     span {
         position: absolute;

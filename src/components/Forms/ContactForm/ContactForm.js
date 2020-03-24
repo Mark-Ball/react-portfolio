@@ -16,13 +16,13 @@ class ContactForm extends Component {
     }
 
     render() {
-        const { firstname,lastname, email } = this.state;
+        const { firstname,lastname, email, message } = this.state;
 
         return (
             <CForm>
                 <h1>How can I help?</h1>
                 <Divider />
-                <div>
+                <div className='flex'>
                     <FormField 
                         name={['firstname', firstname]} 
                         handleInputChange={this.handleInputChange} 
@@ -36,6 +36,11 @@ class ContactForm extends Component {
                     name={['email', email]} 
                     handleInputChange={this.handleInputChange} 
                 />
+                <FormField 
+                    name={['message', message]} 
+                    handleInputChange={this.handleInputChange} 
+                />
+                <input type='submit' value='Send' />
             </CForm>
         )
     }
