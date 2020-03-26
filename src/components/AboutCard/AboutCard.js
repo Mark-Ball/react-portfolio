@@ -21,7 +21,7 @@ class AboutCard extends Component {
                     onClick={this.handleClick}
                 />
                 <h1>{title}</h1>
-                <p className={showContent && 'show'}>{content}</p>
+                <p className={showContent ? 'show' : undefined}>{content}</p>
             </Card>
         )
     }
