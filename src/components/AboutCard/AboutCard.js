@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
-import { Card } from './styles';
+import { Card, IconContainer } from './styles';
 
 class AboutCard extends Component {
     render() {
-        const { backgroundColour, title, content } = this.props;
+        const { imageUrl, title, content } = this.props;
         
         return (
-            <Card style={{backgroundColor: backgroundColour}}>
+            <Card>
+                <IconContainer style={{backgroundImage: `url(${imageUrl})`}} />
                 <h1>{title}</h1>
                 <p>{content}</p>
             </Card>
