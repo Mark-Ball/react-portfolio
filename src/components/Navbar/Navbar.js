@@ -7,15 +7,17 @@ class Navbar extends Component {
     state = {
         showPopup: false,
         titleHovered: false
-    };
+    }
 
     togglePopup = () => {
-        this.setState({ showPopup: !this.state.showPopup })
-    };
+        this.setState(state => ({
+            showPopup: !state.showPopup
+        }));
+    }
 
     handleMouseEnter = () => {
         this.setState({ titleHovered: true })
-    };
+    }
 
     handleMouseLeave = () => {
         this.setState({ titleHovered: false });

@@ -7,7 +7,9 @@ class AboutCard extends Component {
     }
     
     handleClick = () => {
-        this.setState({ showContent: !this.state.showContent });
+        this.setState(state => ({
+            showContent: !state.showContent
+        }));
     }
     
     render() {
