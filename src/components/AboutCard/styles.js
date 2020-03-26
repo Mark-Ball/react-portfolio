@@ -16,8 +16,18 @@ export const Card = styled.div`
     }
 
     p {
+        position: relative;
+        top: -10px;
+        opacity: 0;
         margin: 0;
         text-align: center;
+        transition: all .5s;
+    }
+
+    p.show {
+        position: relative;
+        top: 0px;
+        opacity: 1;
     }
 `;
 
@@ -27,4 +37,5 @@ export const IconContainer = styled.div`
     margin: 10px auto;
     background-color: ${COLOURS.BASE};
     background-size: cover;
+    cursor: pointer;
 `;
