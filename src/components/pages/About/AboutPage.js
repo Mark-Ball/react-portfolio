@@ -25,13 +25,13 @@ class AboutPage extends Component {
                     <Flexbox>
                         <AboutCard
                             imageUrl={'gears_icon.png'}
-                            title={'Efficiency'}
-                            content={'Fast loading and best practice'}
+                            title={'Intuitive'}
+                            content={'Easy to use, learn by doing'}
                         />
                         <AboutCard
                             imageUrl={'gears_icon.png'}
-                            title={'Seamless'}
-                            content={'Smooth transitions enhance the user\'s experience'}
+                            title={'Maintainable'}
+                            content={'Well-written code, easy to understand'}
                         />
                     </Flexbox>
                 </Flexbox>
