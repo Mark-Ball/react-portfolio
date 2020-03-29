@@ -1,21 +1,15 @@
 import React, { Component } from 'react';
-import { TransitionDiv } from './styles';
 
-class TrackVisibility extends Component {
-    state = {
-        visible: false    
-    }
+class IntersectionObs extends Component {
     ref = React.createRef();
-    
-    onVisible = () => {
-        this.setState({ visible: true })
-    }
 
     componentDidMount() {
+        const { onVisible } = this.props;
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.intersectionRatio === 1) {
-                    this.onVisible()
+                    onVisible()
                 }
             },
             {
@@ -31,17 +25,12 @@ class TrackVisibility extends Component {
     }
     
     render() {
-        const { visible } = this.state;
-
         return (
-            <TransitionDiv
-                className={visible ? 'visible' : undefined} 
-                ref={this.ref}
-            >
-                hello
-            </TransitionDiv>
+            <div ref={this.ref}>
+                {this.props.children}
+            </div>
         )
     }
 }
 
-export default TrackVisibility;
+export default IntersectionObs;
