@@ -3,7 +3,6 @@ import { COLOURS, TRANSITIONTIME } from '../../constants';
 
 const height = 30; // px
 const width = 45; // px
-const transitionSpeed = .25; // seconds
 
 export const HamburgerIcon = styled.div`
     height: ${height}px;

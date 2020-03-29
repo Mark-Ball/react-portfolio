@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { Pane } from './styles';
 
 class BackgroundPane extends Component {
-    render() {
-        const { image } = this.props;
-        
+    render() {       
         return (
             <Pane></Pane>
         )

@@ -6,7 +6,7 @@ const width = 250; // px
 
 export const Card = styled.div`
     height: ${height}px;
-    width: ${height}px;
+    width: ${width}px;
 
     h1 {
         font-size: 30px;
@@ -25,7 +25,6 @@ export const Card = styled.div`
     }
 
     p.show {
-        position: relative;
         top: 0px;
         opacity: 1;
     }

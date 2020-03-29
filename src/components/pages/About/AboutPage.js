@@ -5,26 +5,9 @@ import TransitionScroller from '../../TransitionScroller/TransitionScroller';
 import { Title, Flexbox } from './styles';
 
 class AboutPage extends Component {
-    state = {
-        visible: false
-    }
-    
-    onVisible = () => {
-        this.setState({ visible: true });
-    }
-
-    handleClick = () => {
-        this.setState(state => ({
-            visible: !state.visible
-        }))
-    }
-    
     render() {
-        const { visible } = this.state;
-
         return (
             <>
-                <button onClick={this.handleClick}>toggle visible</button>
                 <Title>About</Title>
                 <Divider />
                 <Flexbox>

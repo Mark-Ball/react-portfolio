@@ -4,8 +4,7 @@ class IntersectionObs extends Component {
     ref = React.createRef();
 
     componentDidMount() {
-        const { test, onVisible } = this.props;
-        console.log(test);
+        const { onVisible } = this.props;
 
         const observer = new IntersectionObserver(
             ([entry]) => {
