@@ -4,10 +4,12 @@ class IntersectionObs extends Component {
     ref = React.createRef();
 
     componentDidMount() {
-        const { onVisible } = this.props;
+        const { test, onVisible } = this.props;
+        console.log(test);
 
         const observer = new IntersectionObserver(
             ([entry]) => {
+                // conditional necessary because this function is called when observer.observe is initialised
                 if (entry.intersectionRatio === 1) {
                     onVisible()
                 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Divider from '../../Divider/Divider';
 import AboutCard from '../../AboutCard/AboutCard';
-import IntersectionObs from '../../IntersectionObs/IntersectionObs';
+import TransitionScroller from '../../TransitionScroller/TransitionScroller';
 import { Title, Flexbox } from './styles';
 
 class AboutPage extends Component {
@@ -28,31 +28,37 @@ class AboutPage extends Component {
                 <Title>About</Title>
                 <Divider />
                 <Flexbox>
-                    <IntersectionObs onVisible={this.onVisible}>
-                        <Flexbox className={visible ? 'visible' : 'invisible'}>
+                    <Flexbox>
+                        <TransitionScroller>
                             <AboutCard
                                 imageUrl={'gears_icon.png'}
                                 title={'Efficiency'}
                                 content={'Fast loading and best practice'}
                             />
+                        </TransitionScroller>
+                        <TransitionScroller>
                             <AboutCard
                                 imageUrl={'gears_icon.png'}
                                 title={'Seamless'}
                                 content={'Smooth transitions enhance the user\'s experience'}
                             />
-                        </Flexbox>
-                    </IntersectionObs>
+                        </TransitionScroller>
+                    </Flexbox>
                     <Flexbox>
-                        <AboutCard
-                            imageUrl={'gears_icon.png'}
-                            title={'Intuitive'}
-                            content={'Easy to use, learn by doing'}
-                        />
-                        <AboutCard
-                            imageUrl={'gears_icon.png'}
-                            title={'Maintainable'}
-                            content={'Well-written code, easy to understand'}
-                        />
+                        <TransitionScroller>
+                            <AboutCard
+                                imageUrl={'gears_icon.png'}
+                                title={'Intuitive'}
+                                content={'Easy to use, learn by doing'}
+                            />
+                        </TransitionScroller>
+                        <TransitionScroller>
+                            <AboutCard
+                                imageUrl={'gears_icon.png'}
+                                title={'Maintainable'}
+                                content={'Well-written code, easy to understand'}
+                            />
+                        </TransitionScroller>
                     </Flexbox>
                 </Flexbox>
             </>

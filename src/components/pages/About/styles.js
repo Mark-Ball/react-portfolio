@@ -10,12 +10,15 @@ export const Flexbox = styled.div`
     flex-wrap: wrap;
 
     &.invisible {
+        position: relative;
+        top: -50px;
         opacity: 0;
-        transition: opacity 2s;
     }
 
     &.visible {
+        position: relative;
+        top: 0;
         opacity: 1;
-        transition: opacity 2s;
+        transition: all .5s;
     }
 `;
