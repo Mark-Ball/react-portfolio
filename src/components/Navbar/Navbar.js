@@ -5,8 +5,7 @@ import NavPopup from '../NavPopup/NavPopup';
 
 class Navbar extends Component {
     state = {
-        showPopup: false,
-        titleHovered: false
+        showPopup: false
     }
 
     togglePopup = () => {
@@ -14,27 +13,13 @@ class Navbar extends Component {
             showPopup: !state.showPopup
         }));
     }
-
-    handleMouseEnter = () => {
-        this.setState({ titleHovered: true })
-    }
-
-    handleMouseLeave = () => {
-        this.setState({ titleHovered: false });
-    }
     
     render() {
-        const { showPopup, titleHovered } = this.state;
+        const { showPopup } = this.state;
 
         return (
             <Topbar>
-                <Title 
-                    className={titleHovered && 'titleHovered'} 
-                    onMouseEnter={this.handleMouseEnter}
-                    onMouseLeave={this.handleMouseLeave}
-                >
-                    Mark Ball
-                </Title>
+                <Title>Mark Ball</Title>
                 <Hamburger togglePopup={this.togglePopup} showPopup={showPopup} />
                 <NavPopup showPopup={showPopup} />
             </Topbar>

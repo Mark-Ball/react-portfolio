@@ -12,7 +12,7 @@ class NavPopup extends Component {
                 <Link to='/about'>About</Link>
                 <Link to='/projects'>Projects</Link>
                 <Link to='/contact'>Contact</Link>
-                <p>Download CV</p>
+                <a href='Mark-Ball-CV-020420.pdf' target='_blank'>Download CV</a>
             </Popup>
         )
     }
