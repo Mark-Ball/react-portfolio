@@ -5,7 +5,8 @@ export const COLOURS = {
     DARKHIGHLIGHT: '#d90f1c',
     GREY: '#262021',
     DARKBLUE: '#042252',
-    MIDBLUE: '#063580'
+    MIDBLUE: '#063580',
+    LIGHTBLUE: '#a5bae8'
 };
 
 // for css transitions
