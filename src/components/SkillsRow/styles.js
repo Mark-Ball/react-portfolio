@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import { COLOURS } from '../../constants';
 
 export const Row = styled.div`
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
     p, div, span {
         display: inline-block;
         height: 30px;
@@ -10,7 +14,8 @@ export const Row = styled.div`
     p {
         background-color: ${COLOURS.HIGHLIGHT};
         border: 1px solid ${COLOURS.DARKHIGHLIGHT};
-        color: ${COLOURS.BASE};
+        color: white;
+        line-height: 2;
         width: 75px;
     }
 
@@ -20,20 +25,19 @@ export const Row = styled.div`
         border-bottom: 1px solid ${COLOURS.DARKHIGHLIGHT};
         position: relative;
         width: 200px;
-        vertical-align: middle;
     }
 
     .bar {
         background-color: ${COLOURS.DARKHIGHLIGHT};
-        height: 100%;
-        position: absolute;
-        top: 20;
+        height: calc(100% - 1px);
     }
 
     span {
         background-color: ${COLOURS.HIGHLIGHT};
         border: 1px solid ${COLOURS.DARKHIGHLIGHT};
         color: white;
+        line-height: 2;
+        text-align: center;
         width: 40px;
     }
 `;
