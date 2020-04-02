@@ -2,7 +2,13 @@ import React, { Component } from 'react';
 import Divider from '../../Divider/Divider';
 import AboutCard from '../../AboutCard/AboutCard';
 import TransitionScroller from '../../TransitionScroller/TransitionScroller';
+import SkillsTable from '../../SkillsTable/SkillsTable';
 import { Title, Flexbox } from './styles';
+
+const skills = [
+    { name: 'React', percentage: 90 },
+    { name: 'Node.js', percentage: 75 }
+]
 
 class AboutPage extends Component {
     render() {
@@ -44,6 +50,7 @@ class AboutPage extends Component {
                         </TransitionScroller>
                     </Flexbox>
                 </Flexbox>
+                <SkillsTable skills={skills} />
             </>
         )
     }
