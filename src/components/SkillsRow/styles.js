@@ -5,6 +5,8 @@ export const Row = styled.div`
     display: flex;
     justify-content: left;
     align-items: center;
+    height: 45px;
+    width: 100%;
 
     p, div, span {
         display: inline-block;
@@ -16,7 +18,7 @@ export const Row = styled.div`
         border: 1px solid ${COLOURS.DARKHIGHLIGHT};
         color: white;
         line-height: 2;
-        width: 75px;
+        width: 110px;
     }
 
     div {
@@ -24,7 +26,7 @@ export const Row = styled.div`
         border-top: 1px solid ${COLOURS.DARKHIGHLIGHT};
         border-bottom: 1px solid ${COLOURS.DARKHIGHLIGHT};
         position: relative;
-        width: 200px;
+        width: calc(100% - 150px);
     }
 
     .bar {

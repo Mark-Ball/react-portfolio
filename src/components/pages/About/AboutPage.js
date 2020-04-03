@@ -7,7 +7,16 @@ import { Title, Flexbox } from './styles';
 
 const skills = [
     { name: 'React', percentage: 90 },
-    { name: 'Node.js', percentage: 75 }
+    { name: 'MongoDB', percentage: 90 },
+    { name: 'Node.js', percentage: 75 },
+    { name: 'CSS', percentage: 75 },
+    { name: 'HTML', percentage: 70 },
+    { name: 'Angular', percentage: 30 },
+    { name: 'Ruby on Rails', percentage: 60 },
+    { name: 'C#', percentage: 20 },
+    { name: 'Postgres', percentage: 70 },
+    { name: 'AWS', percentage: 25 },
+    
 ]
 
 class AboutPage extends Component {
