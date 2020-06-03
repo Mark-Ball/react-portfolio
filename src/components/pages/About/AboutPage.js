@@ -3,6 +3,7 @@ import Divider from '../../Divider/Divider';
 import AboutCard from '../../AboutCard/AboutCard';
 import TransitionScroller from '../../TransitionScroller/TransitionScroller';
 import SkillsTable from '../../SkillsTable/SkillsTable';
+import linkedListSvg from '../../svgs/linkedList.svg';
 import { Title, Flexbox } from './styles';
 
 const skills = [
@@ -15,8 +16,7 @@ const skills = [
     { name: 'Ruby on Rails', percentage: 60 },
     { name: 'C#', percentage: 20 },
     { name: 'Postgres', percentage: 70 },
-    { name: 'AWS', percentage: 25 },
-    
+    { name: 'AWS', percentage: 25 }
 ]
 
 class AboutPage extends Component {
@@ -29,7 +29,7 @@ class AboutPage extends Component {
                     <Flexbox>
                         <TransitionScroller>
                             <AboutCard
-                                imageUrl={'gears_icon.png'}
+                                img={linkedListSvg}
                                 title={'Efficiency'}
                                 content={'Fast loading and best practice'}
                             />
@@ -59,7 +59,9 @@ class AboutPage extends Component {
                         </TransitionScroller>
                     </Flexbox>
                 </Flexbox>
-                <SkillsTable skills={skills} />
+                <TransitionScroller>
+                    <SkillsTable skills={skills} />
+                </TransitionScroller>
             </>
         )
     }

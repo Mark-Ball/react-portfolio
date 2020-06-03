@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect 
+        x='25%'
+        y='25%'
+        height='50px'
+        width='50px'
+        border='3px solid red'
+    />
+</svg>

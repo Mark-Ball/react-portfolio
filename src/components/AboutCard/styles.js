@@ -30,7 +30,7 @@ export const Card = styled.div`
     }
 `;
 
-export const IconContainer = styled.div`
+export const IconContainer = styled.img`
     height: 50%;
     width: 50%;
     margin: 10px auto;

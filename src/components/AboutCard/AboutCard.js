@@ -13,13 +13,13 @@ class AboutCard extends Component {
     }
     
     render() {
-        const { imageUrl, title, content } = this.props;
+        const { img, title, content } = this.props;
         const { showContent } = this.state;
         
         return (
             <Card>
                 <IconContainer 
-                    style={{backgroundImage: `url(${imageUrl})`}}
+                    src={img}
                     onClick={this.handleClick}
                 />
                 <h1>{title}</h1>
