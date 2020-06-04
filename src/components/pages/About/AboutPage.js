@@ -4,6 +4,7 @@ import AboutCard from '../../AboutCard/AboutCard';
 import TransitionScroller from '../../TransitionScroller/TransitionScroller';
 import SkillsTable from '../../SkillsTable/SkillsTable';
 import linkedListSvg from '../../svgs/linkedList.svg';
+import gearsSvg from '../../svgs/gears.svg';
 import { Title, Flexbox } from './styles';
 
 const skills = [
@@ -29,14 +30,14 @@ class AboutPage extends Component {
                     <Flexbox>
                         <TransitionScroller>
                             <AboutCard
-                                img={linkedListSvg}
+                                img={gearsSvg}
                                 title={'Efficiency'}
                                 content={'Fast loading and best practice'}
                             />
                         </TransitionScroller>
                         <TransitionScroller>
                             <AboutCard
-                                imageUrl={'gears_icon.png'}
+                                img={linkedListSvg}
                                 title={'Seamless'}
                                 content={'Smooth transitions enhance the user\'s experience'}
                             />

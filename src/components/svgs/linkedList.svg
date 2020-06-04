@@ -10,17 +10,9 @@
         rx='2'
     />
     <path 
-        d='M35 50 L65 50 Z'
-        stroke='#ff1453'
-        stroke-width='2'
-    />
-    <path 
-        d='M65 50 l-5 -5 Z'
-        stroke='#ff1453'
-        stroke-width='2'
-    />
-    <path 
-        d='M65 50 l-5 5 Z'
+        d='M35 50 L65 50 Z
+            M65 50 l-5 -5 Z
+            M65 50 l-5 5 Z'
         stroke='#ff1453'
         stroke-width='2'
     />

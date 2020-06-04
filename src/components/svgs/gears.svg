@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <circle 
+        cx='40'
+        cy='60'
+        r='20'
+        fill='black'
+    />
+    <circle
+        cx='40'
+        cy='60'
+        r='12'
+        fill='white'
+    />
+    <path
+        d='M36 41 l2 -8 l4 0 l2 8 Z
+            M59 56 l8 2 l0 4 l-8 2 Z'
+        fill='black'
+    />
+</svg>
