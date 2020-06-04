@@ -1,9 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-    <rect 
-        x='25%'
-        y='25%'
+    <rect
+        x='10'
+        y='25'
         height='50px'
-        width='50px'
-        border='3px solid red'
+        width='25px'
+        stroke='#ff1453'
+        stroke-width='2px'
+        fill-opacity='0'
+        rx='2'
+    />
+    <path 
+        d='M35 50 L65 50 Z'
+        stroke='#ff1453'
+        stroke-width='2'
+    />
+    <path 
+        d='M65 50 l-5 -5 Z'
+        stroke='#ff1453'
+        stroke-width='2'
+    />
+    <path 
+        d='M65 50 l-5 5 Z'
+        stroke='#ff1453'
+        stroke-width='2'
+    />
+    <rect
+        x='65'
+        y='25'
+        height='50px'
+        width='25px'
+        stroke='#ff1453'
+        stroke-width='2px'
+        fill-opacity='0'
+        rx='2'
     />
 </svg>
