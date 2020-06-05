@@ -5,6 +5,7 @@ import TransitionScroller from '../../TransitionScroller/TransitionScroller';
 import SkillsTable from '../../SkillsTable/SkillsTable';
 import linkedListSvg from '../../svgs/linkedList.svg';
 import efficiencySvg from '../../svgs/efficiency.svg';
+import lightbulbSvg from '../../svgs/lightbulb.svg';
 import { Title, Flexbox } from './styles';
 
 const skills = [
@@ -46,7 +47,7 @@ class AboutPage extends Component {
                     <Flexbox>
                         <TransitionScroller>
                             <AboutCard
-                                imageUrl={'gears_icon.png'}
+                                img={lightbulbSvg}
                                 title={'Intuitive'}
                                 content={'Easy to use, learn by doing'}
                             />
