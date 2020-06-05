@@ -13,7 +13,10 @@
     />
     <path
         d='M36 41 l2 -8 l4 0 l2 8 Z
-            M59 56 l8 2 l0 4 l-8 2 Z'
+            M51 44 l7 -6 l2.8 2.8 l-4 10 Z
+            M59 56 l8 2 l0 4 l-8 2 Z
+            M36 79 l2 8 l4 0 l2 -8 Z
+            M21 56 l-8 2 l0 4 l8 2 Z'
         fill='black'
     />
 </svg>
