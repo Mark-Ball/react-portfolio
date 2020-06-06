@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <path
+        d='M75 85 L35 45 
+            C27 41 27 41 25 35 
+            L30 40 40 30 35 25
+            C41 27 41 27 45 35
+            L85 75 Z'
+        stroke='#ff1453'
+        stroke-width='2'
+        fill-opacity='0'
+    />
+</svg>
