@@ -22,3 +22,11 @@ export const Flexbox = styled.div`
         transition: all .5s;
     }
 `;
+
+export const Paragraph = styled.p`
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    line-height: 2;
+`;

@@ -7,7 +7,7 @@ import linkedListSvg from '../../svgs/linkedList.svg';
 import efficiencySvg from '../../svgs/efficiency.svg';
 import lightbulbSvg from '../../svgs/lightbulb.svg';
 import spannerSvg from '../../svgs/spanner.svg';
-import { Title, Flexbox } from './styles';
+import { Title, Flexbox, Paragraph } from './styles';
 
 const skills = [
     { name: 'React', percentage: 90 },
@@ -28,6 +28,9 @@ class AboutPage extends Component {
             <>
                 <Title>About</Title>
                 <Divider />
+                <Paragraph>
+                    In 2019, I chose to make a career change from economics and health to software development. Since then I am learning more every day and working hard to improve my skills. I am passionate about the craftsmanship of creating the highest quality digital products.
+                </Paragraph>
                 <Flexbox>
                     <Flexbox>
                         <TransitionScroller>
