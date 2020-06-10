@@ -1,12 +1,14 @@
 import styled from 'styled-components';
+import { COLOURS } from '../../constants';
 
 export const Card = styled.div`
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border: 2px solid black;
+    border-radius: 8px;
     background-color: red;
 
     :hover {
-        background-color: blue;
+        background-color: ${COLOURS.HIGHLIGHT};
     }
 `;
