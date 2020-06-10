@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import IntersectionObs from '../../IntersectionObs/IntersectionObs';
+import Divider from '../../Divider/Divider';
+import ProjectCard from '../../ProjectCard/ProjectCard';
+import { Title } from './styles';
 
 class ProjectsPage extends Component {
     render() {
         return (
             <>
-                <h1 style={{height: '100vh'}}>Projects</h1>
-                <IntersectionObs />
+                <Title>Projects</Title>
+                <Divider />
+                <ProjectCard />
             </>
         )
     }
