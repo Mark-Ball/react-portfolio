@@ -5,6 +5,8 @@ const height = 250; // px
 const width = 250; // px
 
 export const Card = styled.div`
+    display: block;
+    text-align: center;
     height: ${height}px;
     width: ${width}px;
 
@@ -35,6 +37,5 @@ export const IconContainer = styled.img`
     width: 50%;
     margin: 10px auto;
     background-color: ${COLOURS.BASE};
-    background-size: cover;
     cursor: pointer;
 `;
