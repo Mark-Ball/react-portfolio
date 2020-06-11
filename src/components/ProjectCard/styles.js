@@ -9,6 +9,7 @@ export const Card = styled.div`
     background-color: ${COLOURS.BASE};
     transition: 1s all;
     cursor: pointer;
+    margin: 20px;
 
     :hover {
         background-color: ${COLOURS.DARKBLUE};

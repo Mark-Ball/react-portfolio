@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Divider from '../../Divider/Divider';
 import ProjectCard from '../../ProjectCard/ProjectCard';
-import { Title } from './styles';
+import { Title, CardContainer } from './styles';
 
 const projects = [
     { 
@@ -12,12 +12,12 @@ const projects = [
     {
         name: 'Magic: The Gathering Marketplace',
         description: 'Two-sided marketplace for Magic cards built with Ruby on Rails',
-        url: null
+        url: 'https://mtg-marketplace.herokuapp.com/'
     },
     {
         name: 'Cinema Guide',
         description: 'CRUD resource for movies built with Angular',
-        url: null
+        url: 'https://cinema-guide-1f286.web.app/movies'
     }
 ]
 
@@ -27,11 +27,16 @@ class ProjectsPage extends Component {
             <>
                 <Title>Projects</Title>
                 <Divider />
-                <ProjectCard
-                    name={projects[0].name}
-                    description={projects[0].description}
-                    url={projects[0].url}
-                />
+                <CardContainer>
+                    {projects.map(project => (
+                        <ProjectCard
+                            key={project.name}
+                            name={project.name}
+                            description={project.description}
+                            url={project.url}
+                        />
+                    ))}
+                </CardContainer>
             </>
         )
     }
