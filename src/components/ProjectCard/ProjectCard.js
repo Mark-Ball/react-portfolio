@@ -3,16 +3,17 @@ import { Card } from './styles';
 
 const ProjectCard = props => {
     const [hovered, setHovered] = useState(false);
-    const { img, text, link } = props;
+    const { name, description, url } = props;
 
     return (
-        <Card 
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-        >
-            {hovered ? props.description : props.name}
-        </Card>
-
+        <a href={url} style={{ textDecoration: 'none', color: 'black' }}>
+            <Card 
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+            >
+                <p>{hovered ? description : name}</p>
+            </Card>
+        </a>
     )
 }
 

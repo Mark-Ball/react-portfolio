@@ -6,18 +6,18 @@ import { Title } from './styles';
 const projects = [
     { 
         name: 'Javascript Short Circuit Evaluator',
-        description: 'Timed quizzes for javascript logic built with Express',
-        link: null
+        description: 'Timed quizzes for Javascript logic built with Express',
+        url: 'http://jsshortcircuit.herokuapp.com/'
     },
     {
         name: 'Magic: The Gathering Marketplace',
         description: 'Two-sided marketplace for Magic cards built with Ruby on Rails',
-        link: null
+        url: null
     },
     {
         name: 'Cinema Guide',
         description: 'CRUD resource for movies built with Angular',
-        link: null
+        url: null
     }
 ]
 
@@ -29,7 +29,8 @@ class ProjectsPage extends Component {
                 <Divider />
                 <ProjectCard
                     name={projects[0].name}
-                    description={projects[0].description}   
+                    description={projects[0].description}
+                    url={projects[0].url}
                 />
             </>
         )
