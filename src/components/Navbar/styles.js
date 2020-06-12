@@ -5,6 +5,7 @@ export const Topbar = styled.div`
     background-color: ${COLOURS.DARKBLUE};
     margin: 0;
     padding: 1em;
+    position: relative;
 
     display: flex;
     justify-content: space-between;

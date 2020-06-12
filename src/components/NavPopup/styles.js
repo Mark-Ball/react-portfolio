@@ -9,7 +9,7 @@ export const Popup = styled.div`
     color: ${COLOURS.BASE};
     height: calc(100vh - ${navBarHeight}px);
     width: ${width}px;
-    position: fixed;
+    position: absolute;
     top: ${navBarHeight}px;
     right: -${width}px;
     z-index: 10;
