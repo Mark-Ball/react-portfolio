@@ -3,6 +3,7 @@ import { COLOURS } from '../../../constants';
 
 export const Container = styled.div`
     display: inline-block;
+    position: relative;
     height: calc(100vh - 82px);
     width: 100vw;
     background: ${COLOURS.MIDBLUE};
@@ -10,12 +11,12 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
     display: inline;
-    position: fixed;
-    top: 50%;
-    left: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
     color: ${COLOURS.BASE};
     margin: 0;
-    padding: 3em;
+    padding: 1em;
 `;
 
 export const WebSpan = styled.span`
