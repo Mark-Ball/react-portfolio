@@ -7,3 +7,7 @@ h1, h2 {
 label, li, p, a, th, td, input, textarea, span {
     font-family: Rubik, sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
