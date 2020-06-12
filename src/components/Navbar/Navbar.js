@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Topbar, Title } from './styles';
 import Hamburger from '../Hamburger/Hamburger';
 import NavPopup from '../NavPopup/NavPopup';
@@ -19,7 +20,7 @@ class Navbar extends Component {
 
         return (
             <Topbar>
-                <Title>Mark Ball</Title>
+                <Link to={'/'}><Title>Mark Ball</Title></Link>
                 <Hamburger togglePopup={this.togglePopup} showPopup={showPopup} />
                 <NavPopup showPopup={showPopup} />
             </Topbar>
