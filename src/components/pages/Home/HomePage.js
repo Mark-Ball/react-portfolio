@@ -1,28 +1,23 @@
-import React, { Component } from 'react';
-import { Container, Title, WebSpan } from './styles';
-import BackgroundPane from '../../BackgroundPane/BackgroundPane';
+import React from 'react';
+import { Container, Title, WebSpan, Background } from './styles';
 
-class HomePage extends Component {
-    render() {
-        return (
-            <>
-                <Container>
-                    <Title>
-                        FULL
-                        <br/>
-                        STACK
-                        <br/>
-                        <WebSpan>Web</WebSpan>
-                        <br/>
-                        DEVELOPER
-                    </Title>
-                <BackgroundPane />
-                <BackgroundPane />
-                <BackgroundPane />
-                </Container>
-            </>
-        )
-    }
+const HomePage = () => {
+    return (
+        <>
+            <Container>
+                <Background image='home-office.jpg' />
+                <Title>
+                    FULL
+                    <br/>
+                    STACK
+                    <br/>
+                    <WebSpan>Web</WebSpan>
+                    <br/>
+                    DEVELOPER
+                </Title>
+            </Container>
+        </>
+    )
 }
 
 export default HomePage;
