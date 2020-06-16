@@ -17,22 +17,23 @@ class ContactForm extends Component {
         this.setState({ [event.target.name]: event.target.value })
     }
 
-    handleFormSubmit = async event => {
+    handleFormSubmit = event => {
         event.preventDefault();
+        const form = event.target;
+        const data = new FormData(form);
         try {
             axios({
                 method: 'POST',
-                url: 'https://formspree.io/markball111@gmail.com',
-                data: this.state
+                url: process.env.REACT_APP_EMAIL,
+                data
             });
         } catch(error) {
             console.log(error);
         }
-        // put some error handling if response is not 200 ??
     }
 
     render() {
-        const { firstname,lastname, email, message } = this.state;
+        const { firstname, lastname, email, message } = this.state;
 
         return (
             <CForm onSubmit={this.handleFormSubmit}>
